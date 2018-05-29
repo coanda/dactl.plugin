@@ -3,8 +3,8 @@
 dependencies=(
   git intltool gcc gcc-c++ vala meson ninja-build
   gnome-common gtk3-devel clutter-devel clutter-gtk-devel
-  gsl-devel webkitgtk4-devel libpeas-devel comedilib-devel librsvg2-devel
-  libusbx libusbx-devel hidapi hidapi-devel gtksourceview3-devel
+  gsl-devel webkitgtk4-devel libpeas-devel comedilib-devel
+  librsvg2-devel gtksourceview3-devel zeromq-devel
 )
 
 dnf -y install ${dependencies[*]}
