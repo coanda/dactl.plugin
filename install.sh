@@ -1,10 +1,10 @@
 #!/bin/bash
 
 dependencies=(
-  git intltool gcc gcc-c++ vala meson ninja-build
+  git intltool gcc gcc-c++ vala meson ninja-build redhat-rpm-config
   gnome-common gtk3-devel clutter-devel clutter-gtk-devel
   gsl-devel webkitgtk4-devel libpeas-devel comedilib-devel
-  librsvg2-devel gtksourceview3-devel zeromq-devel
+  librsvg2-devel gtksourceview3-devel zeromq-devel libgee-devel
 )
 
 dnf -y install ${dependencies[*]}
