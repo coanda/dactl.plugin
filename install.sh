@@ -32,5 +32,6 @@ mkdir -p /usr/local/lib64/dactl/plugins
 mkdir -p /usr/local/share/dactl/
 cp data/config/dactl.xml /usr/local/share/dactl/
 
-echo "/usr/local/lib64" >/dev/null | tee -a /etc/ld.so.conf
+echo "/usr/local/lib64" | sudo tee -a /etc/ld.so.conf
+echo "/usr/local/lib" | sudo tee -a /etc/ld.so.conf
 ldconfig
