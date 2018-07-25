@@ -35,3 +35,7 @@ cp data/config/dactl.xml /usr/local/share/dactl/
 echo "/usr/local/lib64" | sudo tee -a /etc/ld.so.conf
 echo "/usr/local/lib" | sudo tee -a /etc/ld.so.conf
 ldconfig
+
+sed -i 's/Key/_Key/g' /usr/share/applications/org.coanda.Dactl.desktop
+mv /usr/share/applications/org.coanda.Dactl.desktop /usr/share/applications/dactl.desktop
+rm /usr/local/share/applications/org.coanda.Dactl.desktop
